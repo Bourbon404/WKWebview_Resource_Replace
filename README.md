@@ -87,3 +87,6 @@ wkwebview 本地资源替换
 ||缺点||1.版本较高2.只能拦截自定义的协议头3.拦截后会丢弃请求中的body内容||1.全局生效，需注意使用场景2.拦截后会丢弃请求中的body内容											3.采用私有api，有一定的审核风险||1.需要预先替换请求地址2.部分请求无法拦截，比如header中的请求||
 
 
+###效果
+![拦截前](https://github.com/Bourbon404/WKWebview_Resource_Replace /raw/master/before.png)
+![拦截后](https://github.com/Bourbon404/WKWebview_Resource_Replace /raw/master/after.png)

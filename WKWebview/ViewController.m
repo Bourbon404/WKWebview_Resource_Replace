@@ -41,15 +41,15 @@
     
     WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
 
-    [NSURLProtocol registerClass:[BZWKURLProtocol class]];
-    [BZWKURLProtocol wk_registerScheme:@"https"];
-
-
+//    [NSURLProtocol registerClass:[BZWKURLProtocol class]];
+//    [BZWKURLProtocol wk_registerScheme:@"https"];
+//
+//
     BZWKURLSchemeHandler *handler = [[BZWKURLSchemeHandler alloc] init];
     [config setURLSchemeHandler:(handler) forURLScheme:@"bz"];
-
-    server = [[BZGCDWebServer alloc] init];
-    [server start];
+//
+//    server = [[BZGCDWebServer alloc] init];
+//    [server start];
 
 
     self.wkView = [[WKWebView alloc] initWithFrame:self.view.bounds configuration:config];
