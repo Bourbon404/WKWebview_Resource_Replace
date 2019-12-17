@@ -1,13 +1,13 @@
-wkwebview 本地资源替换
+## wkwebview 本地资源替换
 
 
 ----
 
-##GCDWebServer
+## GCDWebServer
 
 这个是一个第三方的库
 
-###使用方法
+### 使用方法
 
 1.创建`GCDWebServer`,
 2.设置根目录，这里的根目录既可以是`[NSBundle mainBundle].bundlePath`，也可以是`NSHomeDirectory()`
@@ -22,16 +22,16 @@ wkwebview 本地资源替换
 并在回调中根据拦截的url中参数，结合自定义参数，进行自定义的资源查找，并返回`GCDWebServerResponse`对象，这个对象的类型有很多种
 如果两种url同时存在，那么就需要创建两个server
 
-###特点
+### 特点
 
 功能强大，开发成本低，开发友好
 不能拦截所有的请求
 
-##NSURLProtocol
+## NSURLProtocol
 
 由于业务的特殊性，发现上面的方式不能拦截到部分请求，上面的方法已经不能满足需要，这里祭出`NSURLProtocol `大法
 
-###使用方法
+### 使用方法
 
 1.新建一个继承自`NSURLProtocol`的协议
 2.在方法中进行需要拦截的url判断，并过滤已经处理过的请求，避免循环请求
@@ -54,7 +54,7 @@ wkwebview 本地资源替换
 ```
 6.使用完毕记得解除注册，这里是全局生效的
 
-###注意事项
+### 注意事项
 
 无需对url进行修改
 能够拦截到所有请求
@@ -63,10 +63,10 @@ wkwebview 本地资源替换
 开发麻烦，自己需要处理很多事情，例如管理请求标记
 
 
-##WKURLSchemeHandler
+## WKURLSchemeHandler
 
 这个是iOS11中新增加的，系统提供的api，可以用来进行请求拦截
-###使用方法
+### 使用方法
 1.创建一个遵循`WKURLSchemeHandler`协议的帮助类
 2.根据业务需求实现仅有的两个代理，这里不需要像`NSURLProtocol`一样对处理过的请求进行标记
 ```
@@ -78,7 +78,7 @@ wkwebview 本地资源替换
 ```
 3.创建帮助类，并在初始化`WKWebViewConfiguration`时，调用其方法`[config setURLSchemeHandler:(handler) forURLScheme:@"bz"];`完成设置
 
-###注意事项
+### 注意事项
 
 这里拦截的请求，只能是自定义协议。也就是说，HTTP、HTTPS、FTP等是不能拦截的，否则闪退报错
 无需对url进行修改
@@ -95,7 +95,7 @@ wkwebview 本地资源替换
 ||缺点||1.版本较高2.只能拦截自定义的协议头3.拦截后会丢弃请求中的body内容||1.全局生效，需注意使用场景2.拦截后会丢弃请求中的body内容											3.采用私有api，有一定的审核风险||1.需要预先替换请求地址2.部分请求无法拦截，比如header中的请求||
 
 
-###效果
+## 效果
 
 ![拦截前](https://github.com/Bourbon404/WKWebview_Resource_Replace/raw/master/before.png)
 ![拦截后](https://github.com/Bourbon404/WKWebview_Resource_Replace/raw/master/after.png)
