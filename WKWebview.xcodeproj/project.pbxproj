@@ -18,7 +18,6 @@
 		9FAB209323A8CB9700B892E2 /* BZWKURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAB209123A8CB9700B892E2 /* BZWKURLProtocol.m */; };
 		9FAB209523A8CBCC00B892E2 /* IMG_4909.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 9FAB209423A8CBCC00B892E2 /* IMG_4909.PNG */; };
 		9FAB209923A8D08900B892E2 /* BZWKURLSchemeHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAB209823A8D08900B892E2 /* BZWKURLSchemeHandler.m */; };
-		9FAB209B23A8D11D00B892E2 /* tmp.html in Resources */ = {isa = PBXBuildFile; fileRef = 9FAB209A23A8D11D00B892E2 /* tmp.html */; };
 		9FAB20CF23A8DD9F00B892E2 /* GCDWebServerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAB20A823A8DD9F00B892E2 /* GCDWebServerResponse.m */; };
 		9FAB20D023A8DD9F00B892E2 /* GCDWebServerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAB20AB23A8DD9F00B892E2 /* GCDWebServerRequest.m */; };
 		9FAB20D123A8DD9F00B892E2 /* GCDWebServerFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FAB20AF23A8DD9F00B892E2 /* GCDWebServerFunctions.m */; };
@@ -56,7 +55,6 @@
 		9FAB209423A8CBCC00B892E2 /* IMG_4909.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_4909.PNG; sourceTree = "<group>"; };
 		9FAB209723A8D08900B892E2 /* BZWKURLSchemeHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BZWKURLSchemeHandler.h; sourceTree = "<group>"; };
 		9FAB209823A8D08900B892E2 /* BZWKURLSchemeHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BZWKURLSchemeHandler.m; sourceTree = "<group>"; };
-		9FAB209A23A8D11D00B892E2 /* tmp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = tmp.html; path = ../../../../../../../../Users/bourbonz/Desktop/tmp.html; sourceTree = "<group>"; };
 		9FAB20A623A8DD9F00B892E2 /* GCDWebServerFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerFunctions.h; sourceTree = "<group>"; };
 		9FAB20A723A8DD9F00B892E2 /* GCDWebServerPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDWebServerPrivate.h; sourceTree = "<group>"; };
 		9FAB20A823A8DD9F00B892E2 /* GCDWebServerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDWebServerResponse.m; sourceTree = "<group>"; };
@@ -122,7 +120,6 @@
 			children = (
 				9FAB209423A8CBCC00B892E2 /* IMG_4909.PNG */,
 				9FAB20E723A8E1B200B892E2 /* video.mp4 */,
-				9FAB209A23A8D11D00B892E2 /* tmp.html */,
 				9FAB20A023A8DD9F00B892E2 /* GCDWebServer */,
 				9FAB209623A8D07100B892E2 /* WKURLSchemeHandler */,
 				9FAB208D23A8CB3000B892E2 /* NSURLProtocol */,
@@ -290,7 +287,6 @@
 				9FAB208423A8C88900B892E2 /* LaunchScreen.storyboard in Resources */,
 				9FAB20E823A8E1B300B892E2 /* video.mp4 in Resources */,
 				9FAB209523A8CBCC00B892E2 /* IMG_4909.PNG in Resources */,
-				9FAB209B23A8D11D00B892E2 /* tmp.html in Resources */,
 				9FAB208123A8C88900B892E2 /* Assets.xcassets in Resources */,
 				9FAB207F23A8C88400B892E2 /* Main.storyboard in Resources */,
 			);
